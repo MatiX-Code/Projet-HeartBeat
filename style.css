@@ -61,8 +61,6 @@ main {
     height: 800px;
 }
 
-
-
 h2 {
     margin: 10px 0px 7px 10px;
     font-family: 'SylexiadSansThin', Helvetica, Arial, sans-serif;
@@ -126,9 +124,6 @@ article img {
     border-radius: 15px;
 }
 
-article:nth-child(2) img {
-    height: 225px;
-}
 
 .New {
     display: grid;
@@ -137,8 +132,6 @@ article:nth-child(2) img {
     margin-bottom: 10px;
     text-align: center;
 }
-
-
 
 .New a img {
     border-radius: 100%;
@@ -172,14 +165,48 @@ footer nav a {
     align-self: center;
 }
 
+.hiden {
+    display: none;
+}
+
 @media screen and (min-width: 450px) {
-
-    body {
-        background-color: red;
-    }
-
     footer {
         display: none
+    }
+
+    .hiden {
+        display: block
+    }
+
+    #nav1 {
+        align-items: center;
+        justify-content: center;
+        grid-template: 1fr 1fr/ max-content 1fr;
+    }
+
+    header div a {
+        width: 20%;
+    }
+
+
+    #nav1 .hiden p {
+        margin-top: 0px;
+    }
+
+    .actu article img {
+        height: auto;
+        width: 17.5vw;
+    }
+
+    .actu {
+        flex-wrap: nowrap;
+    }
+
+    .New>div {
+        border: solid 2px var(--color-red);
+        margin: 5px;
+        border-radius: 15px;
+        padding: 4px;
     }
 
 }

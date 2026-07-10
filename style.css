@@ -39,7 +39,7 @@ body {
 }
 
 
-header>a img {
+header>a:first-child img {
     height: auto;
     width: 70px;
     margin-left: 20px;
@@ -165,12 +165,12 @@ footer nav a {
     align-self: center;
 }
 
-.hiden {
+.hiden, .hiden-after, #burger {
     display: none;
 }
 
 @media screen and (min-width: 450px) {
-    footer {
+    /* footer {
         display: none
     }
 
@@ -215,9 +215,94 @@ footer nav a {
         gap: 5px;
     }
 
+    header div a:first-child {
+        margin-left: 10px
+    } */
+
+    /* .New a img {
+        height: auto;
+        width: 10vw;
+    } */
+
+}
+
+@media screen and (min-width: 660px) {
+    
+    
+    
+    
+    
+    
+        footer {
+        display: none
+    }
+
+    .hiden {
+        display: block
+    }
+
+    #nav1 {
+        align-items: center;
+        justify-content: center;
+        grid-template: 1fr 1fr/ max-content 1fr;
+    }
+
+    header div a {
+        width: 20%;
+    }
+
+
+    #nav1 .hiden p {
+        margin-top: 0px;
+    }
+
+    .actu article img {
+        height: auto;
+        width: 17.5vw;
+    }
+
+    .actu {
+        flex-wrap: nowrap;
+    }
+
+    .New>div {
+        border: solid 2px var(--color-red);
+        margin: 5px;
+        border-radius: 15px;
+        padding: 4px;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5px;
+    }
 
     header div a:first-child {
         margin-left: 10px
     }
+    
+    
+    .hiden-after {
+        display: block;
+    }
 
+    #burger {
+        display: block;
+    }
+
+    #logo, #panier {
+        display: none;
+    }
+
+    #logo2 {
+        height: auto;
+        width: 30vw;
+    }
+
+    header {
+        align-items: center;
+    }
+    
+    
 }

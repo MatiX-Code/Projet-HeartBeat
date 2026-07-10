@@ -171,3 +171,15 @@ footer nav a {
     width: 30px;
     align-self: center;
 }
+
+@media screen and (min-width: 450px) {
+
+    body {
+        background-color: red;
+    }
+
+    footer {
+        display: none
+    }
+
+}

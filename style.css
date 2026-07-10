@@ -209,4 +209,15 @@ footer nav a {
         padding: 4px;
     }
 
+    header div {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5px;
+    }
+
+
+    header div a:first-child {
+        margin-left: 10px
+    }
+
 }
